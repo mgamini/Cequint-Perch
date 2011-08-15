@@ -1,0 +1,47 @@
+#hd ul#nav li {
+	float: left;
+}
+
+#hd {
+	position: relative;
+	z-index: 10;
+}
+
+#hd ul#nav li a:link,
+#hd ul#nav li a:visited {
+	background-color: transparent;
+	background-image: url(../img/bg-204-50.png);
+}
+
+#hd ul#nav ul li a:link,
+#hd ul#nav ul li a:visited {
+	background-color: transparent;
+	background-image: url(../img/bg-204-50.png);
+	width: 100px;
+}
+
+#hd ul#metanav li {
+	float: left;
+}
+
+#content #main-panel table tbody tr td {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+#hd ul#metanav li.hybrid {
+	background-color: #e5e5e5;
+	padding: 3px 3px 3px 14px;
+}
+
+#hd ul#metanav li a:link,
+#hd ul#metanav li a:visited {
+	background-color: #e5e5e5;
+	float: left;
+}
+
+#hd ul#metanav li a.logout {
+	background-color: #efefef;
+	border-left: 1px solid #fff;
+	padding: 0 18px;
+}

@@ -1,0 +1,57 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<title>jQuery Carousel</title> 
+	
+	<link rel="stylesheet" href="http://thomlx.free.fr/jquery/styles/prettify.css" type="text/css" media="screen" /> 
+	<style type="text/css"> 
+#examples ul{overflow:hidden;padding:0;zoom:1;}
+#examples ul li{display:inline;float:left;margin:0 2px 0 0;list-style:none;}
+#examples ul li a{display:block;}
+#examples .js ul{overflow:hidden;zoom:1;}
+#examples .js ul li{overflow:hidden;width:250px;height:167px;}
+#examples .js .carousel-wrap{width:250px;margin-bottom:0;zoom:1;}
+.carousel-control {display: none;}
+	</style> 
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script> 
+	<script type="text/javascript" src="http://thomlx.free.fr/js/jquery.carousel.min.js"></script> 
+	<script type="text/javascript"> 
+		$(function(){
+			$("div.example-2").carousel( { autoSlide: true, loop: true, autoSlideInterval: 2000, effect: "fade" } );
+		});
+	</script> 
+ 
+</head> 
+<body> 
+<!--[if IE 6]><div id="IE6" class="IE"><![endif]--> <!--[if IE 7]><div id="IE7" class="IE"><![endif]--> <!--[if IE & ((!IE 6) & (!IE 7))]><div><![endif]--> <!--[if !IE]>--><div><!--<![endif]--> 
+			<div id="examples" class="box box-inner"> 
+				<div class="tabs-frames"> 
+					<div id="direction" class="tab-frame"> 
+					<div class="carousel example-2"> 
+ 
+						<ul> 
+							<li> 
+								<img src="http://farm4.static.flickr.com/3639/3319814586_dd9c1141dd.jpg?v=0" alt="example pic flicker 2" width="500" height="335" /> 
+							</li> 
+							<li> 
+								<img src="http://l.yimg.com/g/images/home_photo_notsogoodphotography.jpg" alt="example pic flicker 1" width="500" height="335" />
+ 
+							</li> 
+							<li> 
+								<img src="http://l.yimg.com/g/images/home_photo_junku.jpg" alt="example pic flicker 2" width="500" height="335" />
+							</li> 
+							<li> 
+								<img src="http://l.yimg.com/g/images/home_photo_pmorgan.jpg" alt="example pic flicker 2" width="500" height="335" />
+ 
+							</li> 
+						</ul> 
+					</div> 
+				</div> 
+                </div></div>
+ 
+</body> 
+</html> 
+ 

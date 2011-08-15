@@ -1,0 +1,20 @@
+<article class="blockItem row <perch:if exists="perch_item_odd">floatRight<perch:else />floatLeft</perch:if>">
+
+    <perch:if exists="image">
+        <img src="<perch:content type="image" id="image" label="Image" order="2" />" alt="<perch:content type="text" id="label" label="Description" required="false" title="true" order="3" />" /> 
+  	</perch:if>
+
+  <perch:if exists="code">
+      <div class="textBlockCode fivecol last">
+        <perch:content id="code" type="textarea" label="Code" html="true" editor="markitup" order="4" />
+      </div>
+      <div class="textBlockText sevencol">
+  </perch:if>
+  
+      <perch:content id="text" type="textarea" label="Text" textile="true" editor="markitup" required="true" order="1" />
+  
+  <perch:if exists="code">
+  	</div>
+  </perch:if>
+
+</article>
