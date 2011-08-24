@@ -205,8 +205,8 @@ h3 a.subtitle:after {
 ============================*/
 
 body {
-    background: url("../images/background.png") repeat-x scroll left top #CCCACA;
 	height: 100%;
+	background: #cccccc;
 }
 
 a { color: #00e; }
@@ -252,16 +252,25 @@ h1 {
 	margin-bottom: 2px;
 	text-transform: uppercase;
 }
+blockquote {
+	margin: .5em 1em;
+	background: url(../images/topQuote.png) top left no-repeat;
+	padding-left: 30px;
+}
 
 /*==========================
  # Header
 ============================*/
 
 #headWrapper {
-    background: url("../images/header_shadow.png") repeat-x scroll center bottom transparent;
+	background: #fff;
+	padding-top: 10px;
 }
 #header {
 	min-height: 85px;
+	background: url(../images/headerback.jpg) top left no-repeat;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 #branding {
 	text-align:center;
@@ -329,7 +338,7 @@ h1 {
 }
 #main {
 	min-height: 200px;
-	padding: 25px 0 0 40px;
+	padding-top:40px;
 }
 
 #main p {
@@ -343,7 +352,7 @@ h1 {
 }
 #main article {
 	padding: 0px 0px 20px 0px;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 20px 40px;
 	border-bottom: 1px solid #c5c5c5;
 }
 #main article:last-child {
@@ -352,26 +361,189 @@ h1 {
 }
 .floatLeft img, .floatLeft .textBlockCode {
 	float: left;
+	padding-right: 40px;
 }
 .floatRight img, .floatRight .textBlockCode {
 	float:right;
+	padding-left: 40px;
 }
+.ui-tabs-hide {
+	display: none;
+}
+#main h1 {
+	margin-bottom:20px;
+}
+#main h2 {
+	color: #333;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+#main a.calloutLink {
+    background:url(../images/btn_arrow_normal.png) no-repeat 95% 17px, url("../images/linkCallout.png") no-repeat left top;
+    color: #FFFFFF;
+    float: left;
+    margin: 20px 0px 0px 20px;
+    padding: 13px 30px 5px 10px;
+    text-decoration: none;
+}
+
+#main a.calloutLink:hover {
+    background:url(../images/btn_arrow_normal.png) no-repeat 95% 17px, url("../images/linkCalloutHover.png") no-repeat left top;
+	padding-right: 50px;
+}
+
 
 	/*==========================
 	 # Sidebar
 	============================*/
 #sidebar {
 	min-height: 100%;
-	background: #999;
 }
 
 #sidebar ul {
 	list-style: outside none;
-	margin-left: 0em;
+	margin: 10px 0px 0px 0px;
 }
 #sidebar ul li {
+	margin-bottom: 5px;
+}
+#sidebar ul li.ui-tabs-selected {
+	background: #fff;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+#sidebar ul li a {
+	color: #727272;
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 1.3em;
+    padding: 10px 10px 10px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+	display:block;
+	outline: none;
+}
+#sidebar ul li.ui-tabs-selected a {
+    color: #333333;
+	cursor: default;
+}
+#sidebar ul li a:hover {
+	color: #333333;
+}
+#sidebar ul li a#evolutionLink {	background: url("../images/icons/evolution_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#evolutionLink, #sidebar ul li a#evolutionLink:hover {   background: url("../images/icons/evolution_selected.png") no-repeat scroll left center transparent;}
+#sidebar ul li a#leadershipLink {	background: url("../images/icons/leadership_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#leadershipLink, #sidebar ul li a#leadershipLink:hover {   background: url("../images/icons/leadership_selected.png") no-repeat scroll left center transparent;}
+#sidebar ul li a#communityLink {	background: url("../images/icons/community_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#communityLink, #sidebar ul li a#communityLink:hover {   background: url("../images/icons/community_selected.png") no-repeat scroll left center transparent;}
+#sidebar ul li a#ecidLink {	background: url("../images/icons/enhanced_id_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#ecidLink, #sidebar ul li a#ecidLink:hover {   background: url("../images/icons/enhanced_id_selected.png") no-repeat scroll left center transparent;}
+#sidebar ul li a#storiesLink {	background: url("../images/icons/caller_id_stories_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#storiesLink, #sidebar ul li a#storiesLink:hover {   background: url("../images/icons/caller_id_stories_selected.png") no-repeat scroll left center transparent;}
+#sidebar ul li a#newsLink {	background: url("../images/icons/news_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#newsLink, #sidebar ul li a#newsLink:hover {   background: url("../images/icons/news_selected.png") no-repeat scroll left center transparent;}
+#sidebar ul li a#eventsLink {	background: url("../images/icons/events_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#eventsLink, #sidebar ul li a#eventsLink:hover {   background: url("../images/icons/events_selected.png") no-repeat scroll left center transparent;}
+#sidebar ul li a#awardsLink {	background: url("../images/icons/rewards_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#awardsLink, #sidebar ul li a#awardsLink:hover {   background: url("../images/icons/rewards_selected.png") no-repeat scroll left center transparent;}
+#sidebar ul li a#whyjoinLink {	background: url("../images/icons/why_join_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#whyjoinLink, #sidebar ul li a#whyjoinLink:hover {   background: url("../images/icons/why_join_selected.png") no-repeat scroll left center transparent;}
+#sidebar ul li a#ourpeopleLink {	background: url("../images/icons/meet_people_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#ourpeopleLink, #sidebar ul li a#ourpeopleLink:hover {   background: url("../images/icons/meet_people_selected.png") no-repeat scroll left center transparent;}
+#sidebar ul li a#positionsLink {	background: url("../images/icons/positions_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#positionsLink, #sidebar ul li a#positionsLink:hover {   background: url("../images/icons/positions_selected.png") no-repeat scroll left center transparent;}
+#sidebar ul li a#perksLink {	background: url("../images/icons/perks_normal.png") no-repeat scroll left center transparent;	}
+#sidebar ul li.ui-tabs-selected a#perksLink, #sidebar ul li a#perksLink:hover {   background: url("../images/icons/perks_selected.png") no-repeat scroll left center transparent;}
+
+	/*==========================
+	 # People
+	============================*/
+#ourpeople {
+	padding-left: 40px;
+}
+.peopleFlyout {
+	float: left;
+	height: 220px;
+	width: 220px;
+	margin:0px 40px 40px 0px;	
+}
+.peopleFlyout .photo {
+	height: 220px;
+	width: 220px;
+}
+.peopleFlyout img {
+	
+}
+	
+.peopleFlyout .quote { 
+	display: none;
+	position: relative;
+}
+.peopleFlyout.flyUp .quote {
+	padding-bottom: 55px;
+	background: url(../images/arrow_down.png) 10% bottom no-repeat #fff;
+	bottom: 480px;
+	height: 185px;
+	width: 480px;
+}
+.peopleFlyout.flyRight .quote {
+	padding-left: 55px;
+	background: url(../images/arrow_left.png) center left no-repeat #fff;
+	height: 220px;
+	width: 445px;
+	left:240px;
+	bottom:220px;
+}
+.peopleFlyout.flyDown .quote {
+	padding-top: 55px;
+	height: 205px;
+	width: 480px;
+	background: url(../images/arrow_up.png) 10% top no-repeat #fff;
+	top: 10px;
+}
+.peopleFlyout.flyLeft .quote {
+	padding-right: 35px;
+	background: url(../images/arrow_right.png) center right no-repeat #fff;
+	height: 220px;
+	width: 485px;
+	bottom: 220px;
+	right: 530px;
+}
+#ourpeople a.calloutLink {
+	float: left;
+	margin: -20px 0px 20px 50%;
+}
+
+	/*==========================
+	 # Jobs
+	============================*/
+#positions {
+	padding-left:30px;
+}
+#positions .jobPosting {
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 250px;
+	height: 210px;
+	float: left;
+	margin: 0px 20px 20px 0px; 
+}
+#positions .jobPosting:hover {
+	background: #f7f7f7;	
+}
+#positions h3 {
+	margin-bottom: 10px;
+}
+#positions h3 a {
+	color: #14aae2;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-weight: bold;
 
 }
+	/*==========================
+	 # Jobs
+	============================*/
 
 
 /*==========================

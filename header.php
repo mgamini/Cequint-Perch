@@ -18,7 +18,6 @@
 <link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="css/style.css?v=2">
 <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 <script src="js/libs/modernizr-1.7.min.js"></script>
 <?php if ($thisPage=="Our Story") 

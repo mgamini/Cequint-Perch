@@ -6,12 +6,12 @@
 
   <perch:if exists="code">
       <div class="textBlockCode fivecol last">
-        <perch:content id="code" type="textarea" label="Code" html="true" editor="markitup" order="4" />
+        <perch:content id="code" type="textarea" label="Code" html="true" order="4" />
       </div>
       <div class="textBlockText sevencol">
   </perch:if>
   
-      <perch:content id="text" type="textarea" label="Text" textile="true" editor="markitup" required="true" order="1" />
+      <perch:content id="text" type="textarea" label="Text" textile="false" editor="ckeditor" required="true" order="1" html="true" />
   
   <perch:if exists="code">
   	</div>

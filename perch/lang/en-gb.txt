@@ -194,5 +194,6 @@
 	"Editors can see blog":"Editors can see blog",
 	"Backup may only be run by admin":"Backup may only be run by admin",
 	"Path to mysqldump":"Path to mysqldump",
-	"Editors may manage categories":"Editors may manage categories"
+	"Editors may manage categories":"Editors may manage categories",
+	"Editor requested, but not installed: none":"Editor requested, but not installed: none"
 }

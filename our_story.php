@@ -16,14 +16,24 @@ include ('header.php');
 </div>
 
 <div id="contentWrapper" class="container">
-  <div id="content" class="row">
+  <div id="content" class="row tabs">
   	<div id="sidebar" class="twocol last">
-		<?php perch_pages_navigation(); ?>
+		<ul class="sideTabs">
+        	<li><a href="#evolution" id="evolutionLink">Evolution</a></li>
+            <li><a href="#leadership" id="leadershipLink">Leadership</a></li>
+            <li><a href="#community" id="communityLink">Community</a></li>
+        </ul>
     </div>
-    <div class="tencol">
-    	<div id="main" role="main">
-      		<?php perch_content('Text Block'); ?>
+    <div id="main" class="tencol">
+    	<div id="evolution" role="main">
+      		<?php perch_content('Evolution'); ?>
         </div>
+    	<div id="leadership" role="main">
+			<?php perch_content('Leadership'); ?>
+        </div>
+    	<div id="community" role="main">
+      		<?php perch_content('Community'); ?>
+        </div>                
     </div>
   </div>
 </div>
