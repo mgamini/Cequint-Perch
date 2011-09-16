@@ -3,6 +3,9 @@
     <div id="footerbar" class="twelvecol last">
     	<p><?php perch_content('Copyright info');?></p>
     </div>
+    <div id="social">
+    	<?php perch_content('Social network embeds');?>
+    </div>
   </footer>
 </div>
 
@@ -46,12 +49,13 @@ myimages[i].src=preloadimages.arguments[i]
 
 preloadimages("http://localhost/perch/images/linkCalloutHover.png, http://localhost/perch/images/icons/caller_id_stories_selected.png, http://localhost/perch/images/icons/community_selected.png, http://localhost/perch/images/icons/enhanced_id_selected.png, http://localhost/perch/images/icons/events_selected.png, http://localhost/perch/images/icons/evolution_selected.png, http://localhost/perch/images/icons/leadership_selected.png, http://localhost/perch/images/icons/management_selected.png, http://localhost/perch/images/icons/meet_people_selected.png, http://localhost/perch/images/icons/news_selected.png, http://localhost/perch/images/icons/perks_selected.png, http://localhost/perch/images/icons/positions_selected.png, http://localhost/perch/images/icons/rewards_selected.png, http://localhost/perch/images/icons/why_join_selected.png")
 
-$('div.peopleFlyout .photo').hover(function(){
-	$(this).siblings('.quote').fadeIn('fast');
-},function(){
-	$(this).siblings('.quote').fadeOut('fast');
-});
-
+if ( $(window).width() > 750 ) {
+	$('div.peopleFlyout .photo').hover(function(){
+		$(this).siblings('.quote').fadeIn('fast');
+	},function(){
+		$(this).siblings('.quote').fadeOut('fast');
+	});
+}
 });
 </script>
 <!--[if lt IE 7 ]>

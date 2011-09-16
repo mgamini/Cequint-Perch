@@ -27,8 +27,8 @@
 
 <div id="headWrapper" class="container">
   <header id="header" class="row">
-    <div id="branding" class="fivecol" role="main"> <a href="http://localhost/perch/" title="Localpress" rel="home"><?php perch_content('Logo');?> </a> </div>
-    <div id="access" role="navigation" class="sevencol last">
+    <div id="branding" class="threecol" role="main"> <a href="http://localhost/perch/" title="Localpress" rel="home"><?php perch_content('Logo');?> </a> </div>
+    <div id="access" role="navigation" class="ninecol last">
       <div class="skip-link screen-reader-text"><a href="#content" title="Skip to content"> Skip to content </a></div>
       <?php include('phpincludes/nav.php'); ?>
     </div>

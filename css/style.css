@@ -207,6 +207,12 @@ h3 a.subtitle:after {
 body {
 	height: 100%;
 	background: #cccccc;
+	
+/* Delete this to go responsive ---------------------------------------------------------------------------------------------------------------------- 
+	width: 1140px	;
+	margin: 0px auto;
+	
+	*/
 }
 
 a { color: #00e; }
@@ -264,13 +270,14 @@ blockquote {
 
 #headWrapper {
 	background: #fff;
-	padding-top: 10px;
+	padding: 10px 0px 5px 0px;
 }
 #header {
 	min-height: 85px;
 	background: url(../images/headerback.jpg) top left no-repeat;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	position: relative;
 }
 #branding {
 	text-align:center;
@@ -285,9 +292,14 @@ blockquote {
 	/*==========================
 	 # Nav
 	============================*/
+#nav {
+	position: absolute;
+	bottom: 0px;
+	min-width:600px;
+}
 #nav ul {
 	list-style: none outside none;
-	margin: 46px 0 0 0;
+	margin-left: 0px;
 }
 #nav ul li {
 	float: left;
@@ -545,6 +557,26 @@ blockquote {
 	 # Jobs
 	============================*/
 
+	/*==========================
+	 # Contact
+	============================*/
+#contactContent #fullTitle h1 {
+	padding: 20px 0px 10px 20px;	
+	border-bottom: 1px solid #ccc;
+}
+#contactContent h2 {
+	text-transform: uppercase;	
+}
+#contactContent .textBlock {
+	border-bottom: 1px solid #ccc;
+	padding: 20px;
+}
+#contactContent .textBlock p { 
+	margin: 0px;
+}
+#contactContent #map {
+	padding-top: 20px;	
+}
 
 /*==========================
  # Footer
@@ -578,12 +610,56 @@ blockquote {
 
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 750px) {
+	.peopleFlyout {
+		height: auto !important;
+		width: 100% !important;
+		margin: 20px !important;
+			
+	}
+	.peopleFlyout .photo {
+		float: left;
+		width: 100% !important;	
+		margin-bottom: 20px;
+	}
+	.peopleFlyout .quote {
+		background: #fff !important;
+		display: block !important;
+		width: 100% !important;
+		height: auto !important;
+		position: static !important;
+		padding: 20px 0px !important;	
+	}
+	#header {
+		min-height: 120px;
+	}
+	#content {
+		background: #fff !important;	
+	}
+	#main article {
+		margin-left: 0px;	
+	}
+}
+
+@media screen and (max-width: 480px) {
 
   /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
+  #nav {
+	position: static;  
+	min-width: 420px;
+  }
   #nav ul {
 	margin: 10px 0 0 0;
-}
+	}
+	#nav ul li#currentPage {
+		border: 0px !important;	
+	}
+	#flashWrapper {
+		min-height: 150px;	
+	}
+	#flashWrapper object {
+		height: 150px;	
+	}
 }
 
 
