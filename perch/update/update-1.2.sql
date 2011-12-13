@@ -1,1 +1,0 @@
-ALTER TABLE `__PREFIX__contentItems` ADD COLUMN `contentOptions` text NOT NULL;

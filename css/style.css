@@ -338,6 +338,34 @@ blockquote {
 /*==========================
  # Content
 ============================*/
+
+#headWrapper, #flashWrapper, #contentWrapper {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#contentWrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.heroText h1 {
+	font-size: 3.5em;	
+	line-height: 1.2em;
+}
+
+.heroClients img {
+	height: 90px;	
+}
+
+.heroProducts article {
+	background: url('/images/gradient.png') repeat-x;
+	padding: 20px 20px 0px 20px;
+}
+.heroProducts {
+	padding-bottom: 20px;
+}
+
 #content {
 	background: url(../images/fauxCol.png) 13.3% 0% #fff repeat-y;
 	height: 100%;
@@ -371,13 +399,21 @@ blockquote {
 	padding: 0px;
 	border-bottom: none;
 }
-.floatLeft img, .floatLeft .textBlockCode {
+.floatLeft img {
 	float: left;
 	padding-right: 40px;
 }
-.floatRight img, .floatRight .textBlockCode {
+.floatLeft .textBlockCode {
+	float: left;
+	padding-right: 0px;
+}
+.floatRight img {
 	float:right;
 	padding-left: 40px;
+}
+.floatRight .textBlockCode {
+	float:right;
+	padding-left: 0px;
 }
 .ui-tabs-hide {
 	display: none;
@@ -390,7 +426,7 @@ blockquote {
 	font-size: 2em;
 	text-transform: uppercase;
 }
-#main a.calloutLink {
+#main a.calloutLink, #homeMain a.calloutLink {
     background:url(../images/btn_arrow_normal.png) no-repeat 95% 17px, url("../images/linkCallout.png") no-repeat left top;
     color: #FFFFFF;
     float: left;
@@ -399,11 +435,15 @@ blockquote {
     text-decoration: none;
 }
 
-#main a.calloutLink:hover {
+#main a.calloutLink:hover, #homeMain a.calloutLink:hover {
     background:url(../images/btn_arrow_normal.png) no-repeat 95% 17px, url("../images/linkCalloutHover.png") no-repeat left top;
 	padding-right: 50px;
 }
 
+#homeMain a.calloutLink {
+	float: right;	
+	margin-right: 20px;
+}
 
 	/*==========================
 	 # Sidebar
@@ -554,8 +594,13 @@ blockquote {
 
 }
 	/*==========================
-	 # Jobs
+	 # Our Customers
 	============================*/
+
+#ourCustomers {
+	margin-top: 40px;
+	
+}
 
 	/*==========================
 	 # Contact

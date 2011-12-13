@@ -1,0 +1,10 @@
+<article class="blockItem row floatLeft">
+
+    <perch:if exists="image">
+        <img src="<perch:content type="image" id="image" label="Image" order="2" />" alt="<perch:content type="text" id="label" label="Description" required="false" title="true" order="3" />" /> 
+  	</perch:if>
+  
+      <perch:content id="text" type="textarea" label="Text" textile="false" editor="ckeditor" required="true" order="1" html="true" />
+
+
+</article>

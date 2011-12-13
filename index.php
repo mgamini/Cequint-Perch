@@ -6,7 +6,7 @@ $keyWords = 'Keywords here';
 include ('header.php');
 ?>
 
-<div class="container">
+<div class="container" id="homeMain">
     <div id="flashWrapper">
       <div id="flashRow" class="row">
         <div class="row twelvecol last">
@@ -15,33 +15,31 @@ include ('header.php');
       </div>
     </div>
 	<div id="contentWrapper">
-    	<div class="row twelvecol last">
-        	<div id="heroText">
+    	<div class="row">
+        	<div class="heroText twelvecol last">
             	<?php perch_content('Hero text'); ?>
             </div>
-                <a class="heroLink" href="/our_story">Hear our story</a>            
+                <a class="heroLink calloutLink" href="/our_story">Hear our story</a>            
         </div>
-    	<div class="row twelvecol last">
-        	<div id="heroClients">
+    	<div class="row">
+        	<div class="twelvecol last heroClients">
             	<h3>Our Clients</h3>
                 <hr />
-                <?php perch_content('Hero clients'); ?>
+                <a href="/customers"><?php perch_content('Hero clients'); ?></a>
             </div>	
-            <a class="heroLink" href="/customers">Meet our customers</a>            
+            <a class="heroLink calloutLink" href="/customers">Meet our customers</a>            
         </div>  
-    	<div class="row twelvecol last">
-        	<div id="heroProducts">
+    	<div class="row">
+        	<div class="twelvecol last heroProducts">
+            <h3>Our Products</h3>
+            <hr />
                 <?php perch_content('Hero products'); ?>
+                <br />
+                            <a class="heroLink calloutLink" href="/products">See our products</a>
             </div>	
-            <a class="heroLink" href="/products">See our products</a>            
+
         </div>   
-        <div class="row twelvecol last">
-        	<div id="heroPositions">
-                <?php perch_content('Current Positions'); ?>
-            </div>	
-            <a class="heroLink" href="/careers">See our open positions</a>            
-        </div>       
-    </div>
+
     
     
 </div>
